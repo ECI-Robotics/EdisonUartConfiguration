@@ -30,5 +30,3 @@ echo high > /sys/class/gpio/gpio214/direction # Set the TRI_STATE_ALL to high af
 
 node /home/root/gpioinit.js
 
-echo UART Configured >> /home/root/config.txt
-
