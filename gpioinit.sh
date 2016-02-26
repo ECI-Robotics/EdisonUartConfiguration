@@ -32,3 +32,8 @@ node /home/root/gpioinit.js
 
 echo UART Configured >> /home/root/config.txt
 
+export PATH=$PATH:/media/sdcard/plexil4-galileo
+export PLEXIL_HOME=/media/sdcard/plexil4-galileo/home/root/fs/plexil4/plexil-4.0.1
+
+echo Starting default Plexil Plan
+plexilexec.sh -p /home/root/fs/eciadapter/Plexil-Robotics-Hardware-Adapter/eci-robotics-plans/SerialTest.plx -c /home/root/fs/eciadapter/Plexil-Robotics-Hardware-Adapter/interface-config.xml
