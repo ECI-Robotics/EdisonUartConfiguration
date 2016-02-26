@@ -1,0 +1,4 @@
+cp gpioinit.sh /home/root 
+cp gpioinit.js /home/root
+cp uartconfig.service /lib/systemd/system/uartconfig.service
+systemctl enable uartconfig

@@ -1,0 +1,13 @@
+
+[Unit]
+Description=uart custom init service
+After=basic.target
+[Service]
+Type=idle
+RemainAfterExit=true
+ExecStart=/home/root/gpioinit.sh
+Environment="HOME=/home/root"
+WorkingDirectory=/home/root/
+[Install]
+WantedBy=multi-user.target
+
