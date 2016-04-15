@@ -30,3 +30,8 @@ echo high > /sys/class/gpio/gpio214/direction # Set the TRI_STATE_ALL to high af
 
 node /home/root/gpioinit.js
 
+#Optional - Launch a plexil plan at boot
+#export PLEXIL_HOME=/media/sdcard/plexil4-galileo/home/root/fs/plexil4/plexil-4.0.1
+#echo date >> /home/root/logs.txt
+#sh /media/sdcard/plexil4-galileo/home/root/fs/plexil4/plexil-4.0.1/scripts/plexilexec  -c /home/root/fs/robot-adapter/interface-config.xml  -p /home/root/PlexilPlans/default-plan.plx >> /home/root/logs.txt &
+
